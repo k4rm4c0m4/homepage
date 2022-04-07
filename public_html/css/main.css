@@ -1,50 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=JetBrains+Mono&family=Lato&family=Merriweather&family=Montserrat&display=swap');
 /*
-font-family: 'Flow Circular', cursive;
-font-family: 'JetBrains Mono', monospace;
-font-family: 'Lato', sans-serif;
-font-family: 'Merriweather', serif;
-*/
+ font-family: 'Flow Circular', cursive;
+ font-family: 'JetBrains Mono', monospace;
+ font-family: 'Lato', sans-serif;
+ font-family: 'Merriweather', serif;
+ */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+div {
+     overflow: hidden;
+}
+h1 {
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: x-large;
+    word-wrap: normal;
+    text-align: justify;
+}
+
+.s1 {
+    background: url("https://www.simonbusch.info/img/img1.jpg");
+    background-size: cover;
+}
+.s2 {
+    background: url("https://www.simonbusch.info/img/img2.jpg");
+    background-size: cover;
+}
+.s3 {
+    background: url("https://www.simonbusch.info/img/img3.jpg");
+    background-size: cover;
+}
 
 .monospaced {
     font-family: 'JetBrains Mono', monospace;
 }
-
-.mainContainer {
-    width: 100%;
-}
-
-div {
-    overflow: hidden;
-}
-
-h1 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-h2 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-h3 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-h4 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-h5 {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-h6 {
-    font-family: 'Merriweather', serif;
+.centered {
     text-align: center;
 }
 
-p {
-    font-family: 'Lato', sans-serif;
-    word-wrap: normal;
-    text-align: justify;
+.sectionTextContainer1 {
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: black;
+}
+
+.sectionTextContainer1 p {
+    text-align: center;
+}
+
+.sectionTextContainer2 {
+    margin-left: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    width: 33%;
+    background-color: black;
+}
+
+a {
+    color: hotpink;
+}
+
+.sectionTextContainer3 {
+    padding-left: 5em;
 }

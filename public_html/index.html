@@ -1,30 +1,64 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Simon's Homepage</title>
 		<meta name="author" content="Simon Busch" />
 		<meta name="description" content="My Portfolio." />
 		<meta name="Resource-type" content="Document" />
-	
-		<link rel="stylesheet" type="text/css" href="https://www.simonbusch.info/js/fullpage.js/dist/fullpage.css" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<script type="text/javascript" src="https://www.simonbusch.info/js/fullpage.js/dist/fullpage.js"></script>
 	</head>
 
 	<body>
-		<div id="fullpage">
-			<div class="section" data-anchor="section1">Some Text1</div>
-			<div class="section" data-anchor="section2">Some Text2</div>
-			<div class="section" data-anchor="section3">Some Text3</div>
-			<div class="section" data-anchor="section4">Some Text4</div>
-		</div>
+		<div id="fullPage">
+			<div class="section s1">
+				<div class="sectionTextContainer1">
+					<h1>Simon Busch</h1>
+					<p>Student, Developer & Hobbyist</p>
+				</div>
+			</div>
+			<div class="section s2">
+				<div class="sectionTextContainer2">
+					<h1>About me</h1>
+					<p>I am an 18 year old computer science student, hoping to enroll in the Technische Universität Berlin this year.
+						Currently I am a student at the Technisches Bildungszentrum Mitte in Bremen, Germany.
+					</p>
+					<p>My main interests in Computing lie in low-level systems development such as operating systems development and
+						internet infrastructure. I am also very interested in brain-computer interfacing and analysis of complex systems.
+						I hope to one day work at an academic institution and maybe, later in life, teach. Of course I am young, so let'
+						hope those hopes won't be crushed all that easily.
+					</p>
+					<p>Otherwise I am interested in analog synthesis, specficially eletronic music and synthesizers. I have a passion
+					   for self-building electronics and self-hosting my own little cloud infrastructure. The very website you're reading
+					   was built by hand by me and is hosted on a barebones VPS through caddy. Similarly, I host my own office solution on
+					   this domain on docs.simonbusch.info and I even have my own remote development workstation set up on dev.simonbusch.info.
 		
-		<script type="text/javascript">
-			var myFullpage = new fullpage('#fullpage', {
-				anchors:['section1','section2','section3','section4','section5']
-			});
+					</p>
+				</div>
+			</div>
+			<div class="section s3">
+				<div class="sectionTextContainer2">
+					<h1>Contact</h1>
+					<p>You may contact me through my email address <a href="mailto:simon@busch.pro">simon@busch.pro</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			new fullpage("#fullPage", {
+				licenseKey: null,
+			
+				autoScrolling: false,
+				navigation: true,
+				anchors:["home","about","contact"],
+				scrollingSpeed: 1000,
+			
+				css3: true,
+			})
 		</script>
+
 	</body>
 </html>
